@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إضافة نشاط جديد | نادي أريب</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo-light.png" alt="شعار نادي أريب" class="logo">
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="offerings.html">أنشطة النادي</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="manager-dashboard.html" class="active">لوحة المدير</a></li>
+          <li><a href="member-dashboard.html">لوحة العضو</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb">
+    <ol>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="manager-dashboard.html">لوحة تحكم المدير</a></li>
+      <li class="current"><a href="add-offering.html">إضافة نشاط جديد</a></li>
+    </ol>
+  </nav>
+
+  <main class="page-content">
+    <h1 class="page-title">إضافة نشاط جديد</h1>
+
+    <form class="form-card" action="manager-dashboard.html" method="post" enctype="multipart/form-data">
+
+      <div class="form-group">
+        <label for="offering-name">اسم النشاط:</label>
+        <input type="text" id="offering-name" name="offering_name" placeholder="اضف نص...">
+      </div>
+
+      <div class="form-group">
+        <label for="offering-price">السعر (ضع 0 للمجانية):</label>
+        <input type="text" id="offering-price" name="offering_price" placeholder="اضف نص...">
+      </div>
+
+      <div class="form-group">
+        <label for="offering-category">تصنيف النشاط:</label>
+        <div class="select-box">
+          <select id="offering-category" name="offering_category">
+            <option value="" selected>اختر تصنيف للنشاط...</option>
+            <option value="workshop">ورشة</option>
+            <option value="challenge">تحدي</option>
+            <option value="tournament">بطولة</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="offering-description">وصف النشاط:</label>
+        <textarea id="offering-description" name="offering_description" rows="6" placeholder="اضف نص..."></textarea>
+      </div>
+
+      <div class="image-upload">
+        <img src="images/offering-placeholder.png" alt="معاينة صورة النشاط" class="image-preview">
+        <label for="offering-image" class="upload-btn">تحميل صورة النشاط</label>
+        <input type="file" id="offering-image" name="offering_image" class="file-input">
+      </div>
+
+      <div class="form-actions">
+        <input type="submit" value="تأكيد" class="btn btn-primary">
+        <input type="reset" value="إلغاء" class="btn btn-secondary">
+      </div>
+
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo-light.png" alt="شعار نادي أريب" class="footer-logo">
+        <p>وجهتك الجامعية لتطوير مهارات التفكير المنطقي عبر تحديات متجددة.</p>
+      </div>
+      <div class="footer-contact">
+        <h2>تواصل معنا</h2>
+        <ul>
+          <li class="contact-email"><a href="mailto:join@cipherclub.university.edu.sa">join@cipherclub.university.edu.sa</a></li>
+          <li class="contact-location">مبنى الأنشطة الطلابية، قاعة 214</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <ul class="footer-links">
+          <li><a href="#">سياسة الخصوصية</a></li>
+          <li class="last"><a href="#">الشروط والأحكام</a></li>
+        </ul>
+        <p>&copy; 2026 نادي أريب. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -754,3 +754,19 @@ img {
     font-size: 0.62rem;
   }
 }
+
+
+/* Center instructor cards */
+.about-team-scroll {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    overflow-x: auto;
+    padding: 14px 8px 22px;
+}
+
+@media (max-width: 950px) {
+    .about-team-scroll {
+        justify-content: flex-start;
+    }
+}

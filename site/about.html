@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>من نحن | نادي أريب</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo-light.png" alt="شعار نادي أريب" class="logo">
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="offerings.html">أنشطة النادي</a></li>
+          <li><a href="about.html" class="active">من نحن</a></li>
+          <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+          <li><a href="member-dashboard.html">لوحة العضو</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb">
+    <ol>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li class="current"><a href="about.html">من نحن</a></li>
+    </ol>
+  </nav>
+
+  <main class="page-content">
+    <h1 class="page-title">من نحن</h1>
+
+    <section class="about-intro" aria-labelledby="about-mission">
+      <h2 id="about-mission">من نحن</h2>
+      <p>نادي أريب مجتمع جامعي يجمع محبّي الألغاز والشفرات والتحديات الذهنية، ويهدف إلى تنمية التفكير المنطقي وحل المشكلات وسرعة البديهة والعمل الجماعي. نقدم مسابقات وتحديات وورش عمل تمزج التعلم بالمتعة، ونرحب بالطلاب من مختلف التخصصات والخلفيات.</p>
+    </section>
+    <section class="about-team" aria-labelledby="team-heading">
+      <h2 id="team-heading">قادة الأنشطة والمدربون</h2>
+      <p class="about-note">تعرّف على فريق أريب. مرّر أفقيًا لاستعراض المدربين.</p>
+      <div class="about-team-scroll">
+        <article class="about-instructor-card"><img src="images/instructor-shahad.png" alt="صورة أ. شهد العتيبي"><h3><a href="instructor-profile.html">أ. شهد العتيبي</a></h3><p>مدربة التشفير</p></article>
+        <article class="about-instructor-card"><img src="images/instructor-mohammed.png" alt="صورة أ. محمد القحطاني"><h3><a href="instructor-profile.html">أ. محمد القحطاني</a></h3><p>مدرب التحديات</p></article>
+        <article class="about-instructor-card"><img src="images/instructor-hessa.png" alt="صورة أ. حصة الغامدي"><h3><a href="instructor-profile.html">أ. حصة الغامدي</a></h3><p>قائدة الأنشطة</p></article>
+      </div>
+    </section>
+    <section class="about-join" aria-labelledby="join-heading">
+      <h2 id="join-heading">انضم إلى فريقنا</h2>
+      <p>لديك خبرة في الألغاز أو البرمجة أو التعليم؟ يسعدنا انضمامك إلى فريق أريب!</p>
+      <form class="form-card about-join-form" action="about.html" method="get">
+        <div class="form-group"><label for="join-name">الاسم الكامل</label><input id="join-name" name="name" type="text" placeholder="أدخل اسمك الكامل" required></div>
+        <div class="form-group"><label for="join-photo">الصورة الشخصية</label><input id="join-photo" name="photo" type="file" accept="image/*" required></div>
+        <div class="form-group"><label for="join-dob">تاريخ الميلاد</label><input id="join-dob" name="birth_date" type="date" required></div>
+        <div class="form-group"><label for="join-email">البريد الإلكتروني</label><input id="join-email" name="email" type="email" placeholder="example@email.com" required></div>
+        <div class="form-group"><label for="join-expertise">مجال الخبرة</label><input id="join-expertise" name="expertise" type="text" placeholder="مثل: البرمجة والتشفير" required></div>
+        <div class="form-group"><label for="join-skills">المهارات</label><textarea id="join-skills" name="skills" rows="3" placeholder="اذكر مهاراتك" required></textarea></div>
+        <div class="form-group"><label for="join-education">التعليم</label><textarea id="join-education" name="education" rows="3" placeholder="المؤهل العلمي والتخصص" required></textarea></div>
+        <div class="form-actions"><button class="btn btn-primary" type="submit">إرسال الطلب</button></div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo-light.png" alt="شعار نادي أريب" class="footer-logo">
+        <p>وجهتك الجامعية لتطوير مهارات التفكير المنطقي عبر تحديات متجددة.</p>
+      </div>
+      <div class="footer-contact">
+        <h2>تواصل معنا</h2>
+        <ul>
+          <li class="contact-email"><a href="mailto:join@cipherclub.university.edu.sa">join@cipherclub.university.edu.sa</a></li>
+          <li class="contact-location">مبنى الأنشطة الطلابية، قاعة 214</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <ul class="footer-links">
+          <li><a href="#">سياسة الخصوصية</a></li>
+          <li class="last"><a href="#">الشروط والأحكام</a></li>
+        </ul>
+        <p>&copy; 2026 نادي أريب. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -756,17 +756,35 @@ img {
 }
 
 
-/* Center instructor cards */
-.about-team-scroll {
-    display: flex;
-    justify-content: center;
-    gap: 22px;
-    overflow-x: auto;
-    padding: 14px 8px 22px;
+/* ===== About Us + Instructor Profile (Part 2) ===== */
+.about-intro,.about-team,.about-join {margin: 0 auto 46px;max-width: 1050px;text-align:center;}
+.about-intro {padding:25px 22px 30px;border-bottom:1px solid #45305f;}
+.about-intro h2,.about-team h2,.about-join h2 {color:#f2b9eb;font-size:1.55rem;margin:0 0 12px;}
+.about-intro p,.about-join>p {max-width:820px;margin:0 auto 22px;color:#d7cee7;}
+.about-note{color:#bdb0d5;margin-top:0;}
+.about-team-scroll {display:flex;justify-content:center;gap:22px;overflow-x:auto;padding:14px 8px 22px;scrollbar-color:#a44ac7 #1b1231;}
+.about-instructor-card {flex:0 0 260px;background:#1a1230;border:2px solid #44305f;border-radius:18px;padding:22px;text-align:center;}
+.about-instructor-card img {width:165px;height:165px;object-fit:cover;border-radius:12px;}
+.about-instructor-card h3 {margin:10px 0 3px;}
+.about-instructor-card a,.profile-table a {color:#f8adeb;}
+.about-instructor-card a:hover,.profile-table a:hover {color:#fff;}
+.about-instructor-card p {margin:0;color:#cfc5dd;}
+.about-join-form{text-align:right;margin-top:20px;}
+.about-join-form input[type="file"] {padding:10px;}
+.profile-section {max-width:760px;margin:0 auto;text-align:center;}
+.profile-table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border:2px solid #5a3c77;border-radius:18px;background:#1a1230;text-align:right;}
+.profile-table th,.profile-table td {padding:14px 20px;border-bottom:1px solid #4b3567;}
+.profile-table tr:last-child th,.profile-table tr:last-child td {border-bottom:0;}
+.profile-table th[scope="row"] {width:30%;color:#efc4ed;background:#24183d;}
+.profile-table .profile-name{text-align:center;font-size:1.5rem;color:#fff;background:#4c2867;}
+.profile-photo-cell{text-align:center!important;padding:22px!important;}
+.profile-photo-cell img {width:160px;height:160px;object-fit:cover;border-radius:50%;border:3px solid #ac65cf;}
+.profile-return {margin-top:30px;}
+.profile-return .btn{text-decoration:none;display:inline-block;}
+@media (max-width:600px){.about-instructor-card{flex-basis:220px}.profile-table th,.profile-table td{padding:10px;font-size:.88rem}.profile-table th[scope="row"]{width:36%;}}
+
+/* Keep horizontal scrolling accessible on narrow screens */
+@media screen and (max-width: 900px) {
+  .about-team-scroll { justify-content: flex-start; }
 }
 
-@media (max-width: 950px) {
-    .about-team-scroll {
-        justify-content: flex-start;
-    }
-}

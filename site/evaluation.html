@@ -28,11 +28,12 @@
   </header>
 
   <nav class="breadcrumb">
-    <ol>
-      <li><a href="index.html">الرئيسية</a></li>
-      <li class="current"><a href="evaluation.html">تقييم النشاط</a></li>
-    </ol>
-  </nav>
+  <ol>
+    <li><a href="index.html">الرئيسية</a></li>
+    <li><a href="member-dashboard.html">لوحة العضو</a></li>
+    <li class="current"><a href="evaluation.html">تقييم النشاط</a></li>
+  </ol>
+</nav>
 
   <main class="page-content">
     <h1 class="page-title">تقييم النشاط</h1>
@@ -49,19 +50,39 @@
         </select>
 
         <label>التقييم:</label>
+<div class="rating-options">
 
-        <div class="rating-options">
-          <label><input type="radio" name="rating" value="1" required> 1</label>
-          <label><input type="radio" name="rating" value="2"> 2</label>
-          <label><input type="radio" name="rating" value="3"> 3</label>
-          <label><input type="radio" name="rating" value="4"> 4</label>
-          <label><input type="radio" name="rating" value="5"> 5</label>
-        </div>
+  <label>
+    <input type="radio" name="rating" value="5" required>
+    <span>★</span>
+  </label>
+
+  <label>
+    <input type="radio" name="rating" value="4">
+    <span>★</span>
+  </label>
+
+  <label>
+    <input type="radio" name="rating" value="3">
+    <span>★</span>
+  </label>
+
+  <label>
+    <input type="radio" name="rating" value="2">
+    <span>★</span>
+  </label>
+
+  <label>
+    <input type="radio" name="rating" value="1">
+    <span>★</span>
+  </label>
+
+</div>
 
         <label for="feedback">ملاحظاتك:</label>
         <textarea id="feedback" name="feedback" rows="5" required></textarea>
 
-        <input type="submit" value="إرسال التقييم">
+       <input type="submit" value="إرسال التقييم" class="btn btn-primary">
 
       </form>
     </section>

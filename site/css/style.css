@@ -939,4 +939,404 @@ img {
 .join-request input[type="submit"] {
     align-self: center;
     width: 260px;
-}ٍ
+}
+
+
+
+
+/* Home Page */
+
+
+.home-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.intro-text {
+  width: 48%;
+}
+
+.intro-image {
+  width: 48%;
+}
+
+.intro-image img {
+  display: block;
+  width: 100%;
+  /* تدوير زوايا الصورة بمقدار 20 بكسل */
+  border-radius: 20px;
+}
+.intro-text .btn-outline {
+  display: inline-block;
+  margin: 6px 0 6px 10px;
+}
+
+/* Section 2: Leaderboard - تنسيق قسم لوحة الصدارة */
+
+
+
+
+.home-leaderboard {
+  padding: 30px 0;
+
+}
+
+.leaderboard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* صورة الكأس */
+.leaderboard-heading {
+  display: flex;
+  align-items: center;
+}
+
+.leaderboard-icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 12px;
+  border-radius: 12px;
+}
+
+/* بطاقة سارة  فوق */
+.leaderboard-first {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/*     بطاقة محمد ونورة */
+.leaderboard-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* شكل بطاقات الفائزين   */
+.leader-card {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  max-width: 100%;
+  margin: 10px;
+  padding: 14px;
+  background-color: #1a1230;
+  border: 2px solid #362654;
+  border-radius: 16px;
+}
+
+/* الاسم  */
+.leader-info {
+  text-align: right;
+}
+
+.leader-info h3,
+.leader-info p {
+  margin: 0;
+}
+
+/* صورة الأعضاء  */
+.leader-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+/* كأس المركز */
+.leader-trophy {
+  position: relative;
+  width: 46px;
+  text-align: center;
+}
+
+.trophy-icon {
+  display: block;
+  font-size: 38px;
+  line-height: 1.4;
+}
+
+/* رقم المركز داخل الكأس */
+.trophy-number {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  color: #130c24;
+}
+
+
+.section-divider {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #362654;
+}
+
+.home-puzzle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 32px;
+}
+
+.puzzle-text {
+  width: 48%;
+}
+
+.puzzle-heading {
+  display: flex;
+  align-items: center;
+}
+
+.puzzle-heading h2 {
+  margin: 0;
+}
+
+.puzzle-icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 12px;
+  border-radius: 12px;
+}
+
+.puzzle-text .btn-outline {
+  display: inline-block;
+  margin: 6px 0;
+}
+
+.puzzle-image {
+  width: 48%;
+}
+
+.puzzle-image img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-puzzle {
+    flex-direction: column;
+    padding: 30px 16px;
+  }
+
+  .puzzle-text,
+  .puzzle-image {
+    width: 100%;
+  }
+
+  .puzzle-image {
+    margin-top: 20px;
+  }
+}
+ /* Section 4 */
+
+.home-events {
+  padding: 40px 32px;
+}
+
+.events-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.events-heading h2 {
+  margin: 0 0 8px;
+}
+
+.events-heading p {
+  margin: 0;
+  color: #d9d2ea;
+}
+
+.events-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  width: 31.5%;
+  margin-bottom: 24px;
+  background-color: #1a1230;
+  border: 2px solid #362654;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.event-card:hover {
+  border-color: #f062d8;
+}
+
+.event-image {
+  position: relative;
+}
+
+.event-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.event-date {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 5px 12px;
+  color: #ffffff;
+  background-color: #130c24;
+  border: 1px solid #6a3f8f;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.event-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+.event-content h3 {
+  margin: 0 0 14px;
+  color: #f3eefa;
+  font-size: 1.15rem;
+}
+
+.event-extra {
+  display: none;
+  margin: 0 0 16px;
+  color: #d9d2ea;
+}
+
+.event-card:hover .event-extra {
+  display: block;
+}
+
+.event-content .btn-outline {
+  align-self: flex-start;
+  margin: auto 0 0;
+  padding: 6px 22px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-events {
+    padding: 30px 16px;
+  }
+
+  .events-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .events-heading .btn-outline {
+    margin: 16px 0 0;
+  }
+
+  .event-card {
+    width: 100%;
+  }
+
+  .event-extra {
+    display: block;
+  }
+}
+
+
+.home-reviews {
+  padding: 40px 32px;
+}
+
+.home-reviews h2 {
+  margin: 0 0 8px;
+}
+
+.reviews-intro {
+  margin: 0 0 24px;
+  color: #d9d2ea;
+}
+
+.reviews-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 31.5%;
+  margin-bottom: 24px;
+  padding: 18px;
+  background-color: #1a1230;
+  border: 2px solid #362654;
+  border-radius: 16px;
+}
+
+.review-content {
+  flex: 1;
+  margin-left: 14px;
+}
+
+.review-stars {
+  margin: 0 0 6px;
+  color: #f062d8;
+  font-size: 1.2rem;
+}
+
+.review-offering {
+  margin: 0 0 10px;
+  color: #f2b9eb;
+  font-size: 0.85rem;
+}
+
+.review-feedback {
+  margin: 0 0 14px;
+  color: #e8e3f3;
+  font-size: 0.9rem;
+}
+
+.review-content h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.review-member {
+  margin: 0;
+  color: #a59cc0;
+  font-size: 0.8rem;
+}
+
+.review-avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .home-reviews {
+    padding: 30px 16px;
+  }
+
+  .review-card {
+    width: 100%;
+  }
+}

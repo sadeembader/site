@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أنشطة النادي | نادي أريب</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo-light.png" alt="شعار نادي أريب" class="logo">
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="offerings.html" class="active">أنشطة النادي</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="manager-dashboard.html" >لوحة المدير</a></li>
+          <li><a href="member-dashboard.html">لوحة العضو</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb">
+    <ol>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li class="current"><a href="offerings.html">أنشطة النادي</a></li>
+    </ol>
+  </nav>
+
+  <main class="page-content">
+    <h1 class="page-title">أنشطة النادي</h1>
+
+<p class="club-offerings-intro">
+  اكتشف جميع الفعاليات والورش والتحديات التي يقدمها النادي
+  واختر ما يناسبك وكن جزءًا من التجربة!
+</p>
+
+<div class="club-sort-bar">
+
+  <h2>ترتيب العروض حسب:</h2>
+
+  <div class="club-sort-controls">
+
+    <div class="club-sort-field">
+      <label for="offering-category">التصنيف</label>
+
+      <select id="offering-category" name="category">
+        <option value="">جميع التصنيفات</option>
+        <option value="workshops">ورش</option>
+        <option value="challenges">تحديات</option>
+        <option value="championships">بطولات</option>
+      </select>
+    </div>
+
+    <div class="club-sort-field">
+      <label for="offering-price">السعر</label>
+
+      <select id="offering-price" name="price">
+        <option value="">اختر الترتيب</option>
+
+        <optgroup label="السعر">
+          <option value="price-low">الأقل إلى الأكثر</option>
+          <option value="price-high">الأكثر إلى الأقل</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="club-sort-field">
+      <label for="offering-name">الاسم</label>
+
+      <select id="offering-name" name="name">
+        <option value="">اختر الترتيب</option>
+
+        <optgroup label="الاسم">
+          <option value="name-ascending">أ إلى ي</option>
+          <option value="name-descending">ي إلى أ</option>
+        </optgroup>
+      </select>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="club-offerings-list">
+
+  <article class="club-offering-card">
+
+    <img src="images/activity1.png"
+         alt="كأس تحيط به رموز وشفرات"
+         class="club-offering-image">
+
+    <div class="club-offering-content">
+      <h2>بطولة النادي</h2>
+
+      <p class="club-offering-description">
+        منافسة جماعية في حل التحديات.
+      </p>
+
+      <p class="club-offering-price">
+        <strong>0</strong> ريال
+      </p>
+
+      <button type="button" class="btn-outline club-details-button">
+        عرض التفاصيل
+      </button>
+    </div>
+
+  </article>
+
+  <article class="club-offering-card">
+
+    <img src="images/activity4.png"
+         alt="قفل مفتوح ومفتاح ورموز مشفرة"
+         class="club-offering-image">
+
+    <div class="club-offering-content">
+      <h2>ورشة التشفير</h2>
+
+      <p class="club-offering-description">
+        تعلم أساسيات التشفير بطريقة ممتعة وتطبيقية.
+      </p>
+
+      <p class="club-offering-price">
+        <strong>250</strong> ريال
+      </p>
+
+      <button type="button" class="btn-outline club-details-button">
+        عرض التفاصيل
+      </button>
+    </div>
+
+  </article>
+
+  <article class="club-offering-card">
+
+    <img src="images/activity2.png"
+         alt="ساعة توقيت وقطع أحجية"
+         class="club-offering-image">
+
+    <div class="club-offering-content">
+      <h2>تحدي السرعة</h2>
+
+      <p class="club-offering-description">
+        حل أكبر عدد من الألغاز في وقت محدود.
+      </p>
+
+      <p class="club-offering-price">
+        <strong>20</strong> ريال
+      </p>
+
+      <button type="button" class="btn-outline club-details-button">
+        عرض التفاصيل
+      </button>
+    </div>
+
+  </article>
+
+  <article class="club-offering-card">
+
+    <img src="images/activity5.png"
+         alt="شبكة سودوكو بخانات وأرقام"
+         class="club-offering-image">
+
+    <div class="club-offering-content">
+      <h2>تحدي سودوكو</h2>
+
+      <p class="club-offering-description">
+        حل شبكة الأرقام واختبر سرعة تركيزك ومنطقك.
+      </p>
+
+      <p class="club-offering-price">
+        <strong>0</strong> ريال
+      </p>
+
+      <button type="button" class="btn-outline club-details-button">
+        عرض التفاصيل
+      </button>
+    </div>
+
+  </article>
+
+  <article class="club-offering-card">
+
+    <img src="images/activity6.png"
+         alt="مكعب أحجية بأوجه بنفسجية ووردية"
+         class="club-offering-image">
+
+    <div class="club-offering-content">
+      <h2>تحدي المكعبات</h2>
+
+      <p class="club-offering-description">
+        حرّك ورتّب المكعبات للوصول إلى الحل بأسرع وقت.
+      </p>
+
+      <p class="club-offering-price">
+        <strong>30</strong> ريال
+      </p>
+
+      <button type="button" class="btn-outline club-details-button">
+        عرض التفاصيل
+      </button>
+    </div>
+
+  </article>
+
+  <article class="club-offering-card">
+
+    <img src="images/activity3.png"
+         alt="مكعبات تحمل حروفًا عربية"
+         class="club-offering-image">
+
+    <div class="club-offering-content">
+      <h2>تحدي ترتيب الكلمات</h2>
+
+      <p class="club-offering-description">
+        رتّب الحروف المبعثرة لتكوين الكلمات الصحيحة واختبر سرعتك.
+      </p>
+
+      <p class="club-offering-price">
+        <strong>20</strong> ريال
+      </p>
+
+      <button type="button" class="btn-outline club-details-button">
+        عرض التفاصيل
+      </button>
+    </div>
+
+  </article>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo-light.png" alt="شعار نادي أريب" class="footer-logo">
+        <p>وجهتك الجامعية لتطوير مهارات التفكير المنطقي عبر تحديات متجددة.</p>
+      </div>
+      <div class="footer-contact">
+        <h2>تواصل معنا</h2>
+        <ul>
+          <li class="contact-email"><a href="mailto:join@cipherclub.university.edu.sa">join@cipherclub.university.edu.sa</a></li>
+          <li class="contact-location">مبنى الأنشطة الطلابية، قاعة 214</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <ul class="footer-links">
+          <li><a href="#">سياسة الخصوصية</a></li>
+          <li class="last"><a href="#">الشروط والأحكام</a></li>
+        </ul>
+        <p>&copy; 2026 نادي أريب. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

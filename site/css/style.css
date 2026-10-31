@@ -1359,3 +1359,173 @@ img {
     width: 100%;
   }
 }
+/* Club Offerings Page */
+
+.club-offerings-intro {
+  margin: 0 0 32px;
+  text-align: center;
+  color: #d9d2ea;
+}
+
+.club-sort-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+  padding: 20px 24px;
+  background-color: #1a1230;
+  border: 2px solid #362654;
+  border-radius: 18px;
+}
+
+.club-sort-bar h2 {
+  margin: 8px 0;
+  font-size: 1.2rem;
+  color: #f3eefa;
+}
+
+.club-sort-controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.club-sort-field {
+  margin: 8px 14px 8px 0;
+}
+
+.club-sort-field label {
+  display: block;
+  margin-bottom: 6px;
+  color: #f2b9eb;
+}
+
+.club-sort-field select {
+  width: 155px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: #130c24;
+  border: 1px solid #6a3f8f;
+  border-radius: 10px;
+}
+
+.club-sort-field select:hover,
+.club-sort-field select:focus {
+  border-color: #f062d8;
+}
+
+.club-sort-field option,
+.club-sort-field optgroup {
+  color: #ffffff;
+  background-color: #130c24;
+}
+
+.club-offerings-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.club-offering-card {
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  margin-bottom: 36px;
+  background-color: #1a1230;
+  border: 2px solid #362654;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.club-offering-card:hover {
+  border-color: #f062d8;
+}
+
+.club-offering-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.club-offering-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+.club-offering-content h2 {
+  margin: 0 0 10px;
+  color: #f3eefa;
+  font-size: 1.35rem;
+}
+
+.club-offering-description {
+  margin: 0 0 12px;
+  color: #d9d2ea;
+}
+
+.club-offering-price {
+  margin: auto 0 14px;
+  color: #f3eefa;
+}
+
+.club-offering-price strong {
+  color: #f062d8;
+  font-size: 1.5rem;
+}
+
+.club-offering-content .club-details-button {
+  align-self: center;
+  margin: 0;
+  padding: 8px 28px;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .club-sort-bar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 18px;
+  }
+
+  .club-sort-controls {
+    flex-direction: column;
+  }
+
+  .club-sort-field {
+    margin: 10px 0;
+  }
+
+  .club-sort-field select {
+    width: 100%;
+  }
+  .club-sort-field label {
+  display: none;
+}
+
+  .club-offering-card {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .club-offering-content {
+    padding: 18px;
+  }
+}
+
+/* Center the Join Our Team submit button */
+.about-join-form .form-actions {
+    justify-content: center;
+}
+
+.about-join-form .form-actions .btn {
+    margin-left: 0;
+}

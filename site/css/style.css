@@ -1498,3 +1498,12 @@ img {
     padding: 18px;
   }
 }
+
+/* Center the Join Our Team submit button */
+.about-join-form .form-actions {
+    justify-content: center;
+}
+
+.about-join-form .form-actions .btn {
+    margin-left: 0;
+}

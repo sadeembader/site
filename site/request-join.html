@@ -36,23 +36,28 @@
 
   <main class="page-content">
     <h1 class="page-title">طلب المشاركة في نشاط</h1>
+    <p class="join-intro">
+  اختر النشاط الذي ترغب بالمشاركة فيه وأدخل بياناتك
+</p>
 <section class="join-request">
-
+<h2 class="join-title">بيانات الطلب</h2>
     <form>
 
         <label for="offering">اختر النشاط:</label>
         <select id="offering" name="offering" required>
-            <option value="">اختر النشاط</option>
+            <option value="" disabled selected>اختر النشاط</option>
             <option value="cipher">تحدي فك الشفرة</option>
             <option value="sudoku">تحدي سودوكو</option>
             <option value="workshop">ورشة التشفير</option>
         </select>
 
         <label for="fullname">الاسم الكامل:</label>
-        <input type="text" id="fullname" name="fullname" required>
+        <input type="text" id="fullname" name="fullname"
+       placeholder="أدخل اسمك الكامل" required>
 
         <label for="date">التاريخ المفضل:</label>
-        <input type="date" id="date" name="date" required>
+<p class="date-hint">اختر التاريخ المناسب</p>
+<input type="date" id="date" name="date" required>
 
      <input type="submit" value="إرسال الطلب" class="btn btn-primary">
 

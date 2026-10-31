@@ -48,10 +48,10 @@
   <div class="club-sort-controls">
 
     <div class="club-sort-field">
-      <label for="offering-category">التصنيف</label>
+      <label for="offering-category"></label>
 
       <select id="offering-category" name="category">
-        <option value="">جميع التصنيفات</option>
+        <option value="" selected disabled hidden>التصنيف</option>
         <option value="workshops">ورش</option>
         <option value="challenges">تحديات</option>
         <option value="championships">بطولات</option>
@@ -59,28 +59,28 @@
     </div>
 
     <div class="club-sort-field">
-      <label for="offering-price">السعر</label>
+      <label for="offering-price"></label>
 
       <select id="offering-price" name="price">
-        <option value="">اختر الترتيب</option>
+        <option value="" selected disabled hidden>السعر</option>
 
-        <optgroup label="السعر">
-          <option value="price-low">الأقل إلى الأكثر</option>
-          <option value="price-high">الأكثر إلى الأقل</option>
-        </optgroup>
+        
+          <option value="price-low">الأقل ← الأكثر</option>
+          <option value="price-high">الأكثر ← الأقل</option>
+        
       </select>
     </div>
 
     <div class="club-sort-field">
-      <label for="offering-name">الاسم</label>
+      <label for="offering-name"></label>
 
       <select id="offering-name" name="name">
-        <option value="">اختر الترتيب</option>
+        <option value="" selected disabled hidden>الاسم</option>
 
-        <optgroup label="الاسم">
-          <option value="name-ascending">أ إلى ي</option>
-          <option value="name-descending">ي إلى أ</option>
-        </optgroup>
+        
+          <option value="name-ascending">أ ← ي</option>
+          <option value="name-descending">ي ← أ</option>
+        
       </select>
     </div>
 

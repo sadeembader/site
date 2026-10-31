@@ -1488,6 +1488,9 @@ img {
   .club-sort-field select {
     width: 100%;
   }
+  .club-sort-field label {
+  display: none;
+}
 
   .club-offering-card {
     width: 100%;

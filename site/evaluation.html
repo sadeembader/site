@@ -37,11 +37,13 @@
 
   <main class="page-content">
     <h1 class="page-title">تقييم النشاط</h1>
-
+<p class="evaluation-intro">
+  شاركنا رأيك في النشاط الذي أكملته
+</p>
     <section class="evaluation-form">
       <form>
 
-        <label for="previous-offering">اختر النشاط:</label>
+       <label for="previous-offering">اختر النشاط الذي تريد تقييمه *</label>
         <select id="previous-offering" name="previous-offering" required>
           <option value="">اختر النشاط</option>
           <option value="cipher">تحدي فك الشفرة</option>
@@ -49,7 +51,8 @@
           <option value="workshop">ورشة التشفير</option>
         </select>
 
-        <label>التقييم:</label>
+   <label>التقييم:</label>
+
 <div class="rating-options">
 
   <label>
@@ -79,13 +82,32 @@
 
 </div>
 
-        <label for="feedback">ملاحظاتك:</label>
-        <textarea id="feedback" name="feedback" rows="5" required></textarea>
+<p class="rating-hint">اختر من 1 إلى 5</p>
+
+       <label for="feedback">ملاحظاتك:</label>
+<textarea id="feedback" name="feedback" rows="5"
+          placeholder="نسعد لسماع ملاحظتك أو اقتراحك"
+          required></textarea>
 
        <input type="submit" value="إرسال التقييم" class="btn btn-primary">
 
       </form>
-     
+     </section>
+
+<section class="evaluation-thanks">
+  <h2>شكرًا لمشاركتك</h2>
+
+  <p class="thanks-icon">🤝</p>
+
+  <p>
+    رأيك يساعدنا في تحسين الأنشطة القادمة
+    وتقديم تجربة أفضل.
+  </p>
+
+  <hr>
+
+  <p class="thanks-message">بأفكاركم نتقدم ♡</p>
+</section>
   </main>
 
   <footer class="site-footer">

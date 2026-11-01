@@ -43,7 +43,7 @@
 <h2 class="join-title">بيانات الطلب</h2>
     <form>
 
-        <label for="offering">اختر النشاط:</label>
+        <label for="offering">اختر النشاط:*</label>
         <select id="offering" name="offering" required>
             <option value="" disabled selected>اختر النشاط</option>
             <option value="cipher">تحدي فك الشفرة</option>
@@ -51,12 +51,14 @@
             <option value="workshop">ورشة التشفير</option>
         </select>
 
-        <label for="fullname">الاسم الكامل:</label>
+        <label for="fullname">الاسم الكامل:*</label>
         <input type="text" id="fullname" name="fullname"
        placeholder="أدخل اسمك الكامل" required>
 
-        <label for="date">التاريخ المفضل:</label>
+      <label for="date">التاريخ المناسب:*</label>
+
 <p class="date-hint">اختر التاريخ المناسب</p>
+
 <input type="date" id="date" name="date" required>
 
      <input type="submit" value="إرسال الطلب" class="btn btn-primary">

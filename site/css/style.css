@@ -824,7 +824,7 @@ img {
     color: #d9d2ea;
 }
 .date-hint {
-    margin: -12px 0 0;
+    margin: -12px 0 4px;
     color: #a59cc0;
     font-size: 0.9rem;
 }

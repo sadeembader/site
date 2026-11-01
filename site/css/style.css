@@ -789,6 +789,14 @@ img {
 }
 /* Member Dashboard */
 
+.member-dashboard-title {
+    width: 100%;
+    text-align: center;
+}
+.member-section-title {
+    width: 100%;
+    text-align: center;
+}
 .member-stats {
     display: flex;
     justify-content: space-between;

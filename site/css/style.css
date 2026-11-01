@@ -789,6 +789,14 @@ img {
 }
 /* Member Dashboard */
 
+.member-dashboard-title {
+    width: 100%;
+    text-align: center;
+}
+.member-section-title {
+    width: 100%;
+    text-align: center;
+}
 .member-stats {
     display: flex;
     justify-content: space-between;
@@ -824,7 +832,7 @@ img {
     color: #d9d2ea;
 }
 .date-hint {
-    margin: -12px 0 0;
+    margin: -12px 0 4px;
     color: #a59cc0;
     font-size: 0.9rem;
 }

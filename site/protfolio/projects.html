@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+
+        <img id="logo"
+             src="logo.png"
+             alt="Website Logo"
+             width="100"
+             height="100">
+
+        <h1>About Me</h1>
+
+        
+
+    <a href="index.html"
+       accesskey="h"
+       title="Home Page - Shortcut: Alt + H">
+       Home Page
+    </a>
+
+    <a href="about-me.html"
+       accesskey="a"
+       title="About Me - Shortcut: Alt + A">
+       About Me
+    </a>
+
+    <a href="projects.html"
+       accesskey="p"
+       title="My Projects - Shortcut: Alt + P">
+       My Projects
+    </a>
+
+</div>
+    
+
+    </header>
+
+
+    <!-- Sidebar before main -->
+     <div id="sidebar">
+    <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="projects.html">My Projects</a></li>
+    </ul>
+</div>
+
+
+    
+<main>
+
+    <table>
+
+        <caption>List of My Projects</caption>
+
+        <thead>
+            <tr>
+                <th></th>
+                <th>Proj. Title</th>
+                <th>Objectives</th>
+                <th>Tools</th>
+                <th>Duration</th>
+                <th>Overview</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+    <th rowspan="3">Prev Projects</th>
+    <td>Project 1</td>
+    <td>Java Project</td>
+   <td>
+    1. <a href="https://www.jgrasp.org/" tabindex="-1">JGrasp</a><br>
+    2. Visual Basic
+</td>
+    <td>...</td>
+
+    <td>
+        <img src="java.png" alt="Java Project" width="100">
+    </td>
+</tr>
+
+<tr>
+    <td>Project 2</td>
+    <td>UX Project</td>
+    <td>...</td>
+    <td>...</td>
+
+    <td>
+        <img src="ux.jpg" alt="UX Project" width="100">
+    </td>
+</tr>
+
+<tr>
+    <td>Project 3</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+</tr>
+
+<tr>
+    <th rowspan="2">Current Projects</th>
+    <td>Project 4</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+</tr>
+
+<tr>
+    <td>Project 5</td>
+    <td>Front-end website</td>
+    <td>...</td>
+    <td>...</td>
+
+    <td>
+        <img src="web1.webp" alt="Front-end Website" width="100">
+    </td>
+</tr>  
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Others</th>
+                <td colspan="5">...</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+    <h2>Get involved with a project:</h2>
+
+
+
+<script>
+    let age = prompt("Please enter your age:");
+
+    function checkUserAge(age) {
+        if (age >= 18) {
+            return "Adult! You are eligible to participate in the projects!";
+        } else if (age >= 13) {
+            return "Teenager! You can participate with guidance from an adult.";
+        } else {
+            return "Child! Sorry, you are too young to join the projects.";
+        }
+    }
+
+    if (Number.isInteger(Number(age)) && age !== null && age.trim() !== "") {
+        let message = checkUserAge(Number(age));
+
+        document.write(
+            '<h2 style="background-color: gray; color: white; text-align: center;">'
+            + message +
+            '</h2>'
+        );
+    } else {
+        alert("You did not enter an integer number");
+    }
+</script>
+
+<form id="project-form">
+
+    <p>Your Information</p>
+
+   <label for="name">• Name:</label>
+<input type="text" id="name" name="name" tabindex="1" requruired>
+
+<span>• Gender:</span>
+
+<input type="radio" id="male" name="gender" value="male" 
+       checked tabindex="2" requruired>
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="female" 
+       tabindex="3" requruired>
+<label for="female">Female</label>
+
+<br>
+
+<label for="age">• Age:</label>
+<input type="number" id="age" name="age" min="14" tabindex="4" required>
+
+<br>
+
+<label for="email">• Email:</label>
+<input type="email" id="email" name="email" tabindex="5" requruired>
+
+<br>
+
+<label for="telephone">• Telephone:</label>
+<input type="tel"
+       id="telephone"
+       name="telephone"
+       placeholder="+9665XXXXXXXX"
+       tabindex="6" requruired>
+
+<br>
+
+<label for="project">• Choose the project you want to be a part of:</label>
+
+<select id="project" name="project" tabindex="7">
+    <option>Project 1</option>
+    <option>Project 2</option>
+    <option>Project 3</option>
+    <option>Project 4</option>
+    <option>Project 5</option>
+</select>
+
+<br>
+
+<label for="message">• Message:</label>
+<br>
+
+<textarea id="message"
+          name="message"
+          rows="6"
+          cols="64"
+          tabindex="8"></textarea>
+
+<br>
+
+<input type="submit" value="Submit" tabindex="9">
+
+<label for="telephone">• Telephone:</label>
+<input type="tel"
+       id="telephone"
+       name="telephone"
+       placeholder="+9665XXXXXXXX">
+    <br>
+
+    <label for="project">• Choose the project you want to be a part of:</label>
+
+    <select id="project" name="project">
+        <option>Project 1</option>
+        <option>Project 2</option>
+        <option>Project 3</option>
+        <option>Project 4</option>
+        <option>Project 5</option>
+    </select>
+
+    <br>
+
+    <label for="message">• Message:</label>
+    <br>
+
+    <textarea
+        id="message"
+        name="message"
+        rows="6"
+        cols="64"
+        placeholder="Type your message here please!"></textarea>
+
+    <br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+
+</main>
+
+    <footer>
+        &copy; 2026 IT312 Lab
+    </footer>
+
+</body>
+
+</html>
+
+

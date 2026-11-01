@@ -1488,9 +1488,7 @@ img {
   .club-sort-field select {
     width: 100%;
   }
-  .club-sort-field label {
-  display: none;
-}
+ 
 
   .club-offering-card {
     width: 100%;
@@ -1509,4 +1507,18 @@ img {
 
 .about-join-form .form-actions .btn {
     margin-left: 0;
+}
+@media screen and (max-width: 768px) {
+  .home-intro {
+    flex-direction: column;
+  }
+
+  .intro-text,
+  .intro-image {
+    width: 100%;
+  }
+
+  .intro-image {
+    margin-top: 20px;
+  }
 }

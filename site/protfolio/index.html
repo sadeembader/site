@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+
+        <img id="logo"
+             src="logo.png"
+             alt="Website Logo"
+             width="100"
+             height="100">
+
+        <h1>Welcome to My First Website</h1>
+
+  <div id="navigation">
+
+    <a href="index.html"
+       accesskey="h"
+       title="Home Page - Shortcut: Alt + H">
+       Home Page
+    </a>
+
+    <a href="about-me.html"
+       accesskey="a"
+       title="About Me - Shortcut: Alt + A">
+       About Me
+    </a>
+
+    <a href="projects.html"
+       accesskey="p"
+       title="My Projects - Shortcut: Alt + P">
+       My Projects
+    </a>
+
+</div>
+
+    </header>
+
+
+    <!-- Lab 6: Sidebar must be before main -->
+  <div id="sidebar">
+    <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="projects.html">My Projects</a></li>
+    </ul>
+</div>
+
+
+    <main>
+
+        <!-- First Article -->
+        <article>
+
+            <div class="post">
+
+                <h2 class="postHeader">
+    <a href="projects.html">My Projects</a>
+</h2>
+                </div>
+
+                <div class="postContent">
+
+                    <h3>Innovation &amp; Growth</h3>
+
+                    <p>
+                        To be a
+                        <span class="highlight">
+                            globally recognized web developer
+                        </span>,
+                        renowned for innovative approaches and the ability
+                        to adapt to rapidly changing technologies.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- Second Article -->
+        <article>
+
+            <div class="post">
+
+                <div class="postHeader">
+                    <h2>My Mission</h2>
+                </div>
+
+                <div class="postContent">
+
+                    <h3>Technical Excellence</h3>
+
+                    <p>
+                        To consistently write clean, efficient, and
+                        maintainable code and applications that are
+                        both functional and scalable.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- Lab 6 - Task 2: Flexbox -->
+        <section>
+
+            <h2 class="postHeader">My Projects</h2>
+
+            <div class="flex-container">
+
+                <div class="flex-item">Project 1</div>
+
+                <div class="flex-item">Project 2</div>
+
+                <div class="flex-item">Project 3</div>
+
+                <div class="flex-item">Project 4</div>
+
+                <div class="flex-item">Project 5</div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        &copy; 2026 IT312 Lab
+    </footer>
+
+</body>
+
+</html>

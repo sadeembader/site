@@ -51,10 +51,12 @@
       <label for="offering-category"></label>
 
       <select id="offering-category" name="category">
+        <optgroup label="التصنيف">
         <option value="" selected disabled hidden>التصنيف</option>
         <option value="workshops">ورش</option>
         <option value="challenges">تحديات</option>
         <option value="championships">بطولات</option>
+        </optgroup>
       </select>
     </div>
 
@@ -64,10 +66,12 @@
       <select id="offering-price" name="price">
         <option value="" selected disabled hidden>السعر</option>
 
-        
+                <optgroup label="السعر">
+
           <option value="price-low">الأقل ← الأكثر</option>
           <option value="price-high">الأكثر ← الأقل</option>
-        
+              </optgroup>
+
       </select>
     </div>
 
@@ -77,10 +81,10 @@
       <select id="offering-name" name="name">
         <option value="" selected disabled hidden>الاسم</option>
 
-        
+        <optgroup label="الاسم">
           <option value="name-ascending">أ ← ي</option>
           <option value="name-descending">ي ← أ</option>
-        
+      </optgroup>
       </select>
     </div>
 

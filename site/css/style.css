@@ -865,6 +865,8 @@ img {
 .join-request input,
 .join-request select {
     padding: 14px;
+    font-family: "IBM Plex Sans Arabic", Tahoma, Arial, sans-serif;
+    font-size: 1rem;
     color: #f3eefa;
     background-color: #1a1230;
     border: 2px solid #362654;
@@ -900,6 +902,8 @@ img {
 .evaluation-form select,
 .evaluation-form textarea {
     padding: 14px;
+    font-family: "IBM Plex Sans Arabic", Tahoma, Arial, sans-serif;
+    font-size: 1rem;
     color: #f3eefa;
     background-color: #1a1230;
     border: 2px solid #362654;

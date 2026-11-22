@@ -1570,4 +1570,26 @@ img {
   .intro-image {
     margin-top: 20px;
   }
+  .join-request input,
+.join-request select {
+    font-family: "IBM Plex Sans Arabic", Tahoma, Arial, sans-serif;
+}
+#requests-list {
+    margin-top: 30px;
+}
+
+#requests-list h3 {
+    text-align: center;
+    color: #f3eefa;
+    margin-bottom: 18px;
+}
+
+#requests-list p {
+    padding: 16px;
+    margin: 12px 0;
+    background-color: #1a1230;
+    border: 2px solid #362654;
+    border-radius: 12px;
+    color: #d9d2ea;
+}
 }

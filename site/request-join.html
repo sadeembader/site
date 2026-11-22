@@ -41,7 +41,7 @@
 </p>
 <section class="join-request">
 <h2 class="join-title">بيانات الطلب</h2>
-    <form>
+    <form novalidate>
 
         <label for="offering">اختر النشاط:*</label>
         <select id="offering" name="offering" required>
@@ -64,7 +64,7 @@
      <input type="submit" value="إرسال الطلب" class="btn btn-primary">
 
     </form>
-
+<div id="requests-list"></div>
 </section>
   </main>
 
@@ -92,6 +92,6 @@
       </div>
     </div>
   </footer>
-
+<script src="js/request-join.js"></script>
 </body>
 </html>

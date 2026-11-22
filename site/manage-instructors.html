@@ -39,26 +39,11 @@
 
     <div class="manage-layout">
 
-      <form class="panel panel-list" action="manage-instructors.html" method="post">
+      <form id="delete-form" class="panel panel-list" action="manage-instructors.html" method="post">
         <h2 class="panel-title">قائمة المدربين الحاليين</h2>
         <p class="panel-hint">حدد المربع بجانب المدرب واضغط حذف لإزالته.</p>
 
-        <ul class="instructor-list">
-          <li>
-            <input type="checkbox" id="instructor-mohammed" name="instructors" value="mohammed">
-            <img src="images/instructor-mohammed.png" alt="صورة أ. محمد القحطاني" class="instructor-thumb">
-            <label for="instructor-mohammed">أ. محمد القحطاني</label>
-          </li>
-          <li>
-            <input type="checkbox" id="instructor-hessa" name="instructors" value="hessa">
-            <img src="images/instructor-hessa.png" alt="صورة أ. حصة الغامدي" class="instructor-thumb">
-            <label for="instructor-hessa">أ. حصة الغامدي</label>
-          </li>
-          <li>
-            <input type="checkbox" id="instructor-shahad" name="instructors" value="shahad">
-            <img src="images/instructor-shahad.png" alt="صورة أ. شهد العتيبي" class="instructor-thumb">
-            <label for="instructor-shahad">أ. شهد العتيبي</label>
-          </li>
+        <ul id="instructor-list" class="instructor-list">
         </ul>
 
         <div class="form-actions">
@@ -66,7 +51,7 @@
         </div>
       </form>
 
-      <form class="panel" action="manage-instructors.html" method="post" enctype="multipart/form-data">
+      <form id="add-form" class="panel" action="manage-instructors.html" method="post" enctype="multipart/form-data">
         <h2 class="panel-title">إضافة مدرب جديد</h2>
 
         <div class="form-group">
@@ -76,7 +61,7 @@
 
         <div class="form-group">
           <label for="new-birthdate">تاريخ الميلاد:</label>
-        <input type="date" id="new-birthdate" name="birth_date" dir="ltr">
+          <input type="date" id="new-birthdate" name="birth_date" dir="ltr">
         </div>
 
         <div class="form-group">
@@ -100,8 +85,8 @@
         </div>
 
         <div class="image-upload image-upload-small">
-          <img src="images/instructor-placeholder.png" alt="معاينة صورة المدرب" class="image-preview">
-          <label for="new-photo" class="upload-btn">تحميل صورة المدرب</label>
+          <img src="images/instructor-placeholder.png" id="new-photo-preview" alt="معاينة صورة المدرب" class="image-preview">
+          <label for="new-photo" id="new-photo-label" class="upload-btn">تحميل صورة المدرب</label>
           <input type="file" id="new-photo" name="photo" class="file-input">
         </div>
 
@@ -137,6 +122,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/manage-instructors.js"></script>
 
 </body>
 </html>

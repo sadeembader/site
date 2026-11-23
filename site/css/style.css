@@ -1595,7 +1595,7 @@ img {
 }
 
 
-/* Phase 3 - Light Theme */
+/*Light Theme */
 
 body.light-theme {
     background-color: #f8f2ff;
@@ -1647,9 +1647,51 @@ body.light-theme .review-stars {
     color: #8e237c;
 }
 
-#theme-button {
-    display: inline-block;
-    font-family: inherit;
-    font-size: 1rem;
+
+/* Theme toggle button */
+
+.main-nav li.theme-item {
+    margin: 4px 16px 4px 0;
+}
+
+.theme-toggle {
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    border: 1px solid #a66cc5;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #e2b9ff;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-toggle svg {
+    width: 20px;
+    height: 20px;
+}
+
+.theme-toggle:hover {
+    background-color: #39224f;
+    border-color: #e04ad8;
+}
+
+.theme-moon {
+    display: none;
+}
+
+body.light-theme .theme-sun {
+    display: none;
+}
+
+body.light-theme .theme-moon {
+    display: block;
+}
+
+body.light-theme .theme-toggle {
+    background-color: #f5effb;
+    color: #6c3295;
+    border-color: #aa73c6;
 }

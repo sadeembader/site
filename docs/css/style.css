@@ -1594,6 +1594,7 @@ img {
 }
 }
 
+
 #backToTop {
     display: none;
     position: fixed;
@@ -1601,6 +1602,21 @@ img {
     right: 25px;
     z-index: 1000;
     cursor: pointer;
+
+    width: 48px;
+    height: 48px;
+    border: 2px solid #d946ef;
+    border-radius: 50%;
+    background-color: #32194b;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 3px 12px rgba(217, 70, 239, 0.3);
+}
+body.light-theme #backToTop {
+    background-color: #8b45b5;
+    border-color: #8b45b5;
+    color: #ffffff;
 }
 
 /*Light Theme */
@@ -1981,7 +1997,6 @@ body.light-theme .site-footer {
     outline-offset: 3px;
 }
 
-
 /* Rating Stars - Light Theme */
 
 body.light-theme .rating-options span {
@@ -1991,4 +2006,14 @@ body.light-theme .rating-options span {
 body.light-theme .rating-options label:has(input:checked) span,
 body.light-theme .rating-options label:has(input:checked) ~ label span {
     color: gold;
+}
+
+/* Theme Button - Mobile Screens */
+
+@media screen and (max-width: 768px) {
+    .main-nav li.theme-item {
+        position: static;
+        transform: none;
+        margin: 3px 10px;
+    }
 }

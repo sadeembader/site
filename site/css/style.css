@@ -1658,9 +1658,19 @@ body.light-theme .review-stars {
 
 /* Theme toggle button */
 
-.main-nav li.theme-item {
-    margin: 4px 16px 4px 0;
+
+.main-nav ul {
+    position: relative;
 }
+
+.main-nav li.theme-item {
+    position: absolute;
+    left: -55px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
 
 .theme-toggle {
     width: 40px;

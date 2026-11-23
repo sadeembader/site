@@ -2017,3 +2017,6 @@ body.light-theme .rating-options label:has(input:checked) ~ label span {
         margin: 3px 10px;
     }
 }
+html {
+  background-color: #130c24;
+}

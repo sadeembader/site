@@ -1593,3 +1593,63 @@ img {
     color: #d9d2ea;
 }
 }
+
+
+/* Phase 3 - Light Theme */
+
+body.light-theme {
+    background-color: #f8f2ff;
+    background-image: none;
+    color: #32194b;
+}
+
+body.light-theme .leader-card,
+body.light-theme .event-card,
+body.light-theme .review-card {
+    background-color: #ffffff;
+    border-color: #d4bde8;
+}
+
+body.light-theme .event-content h3,
+body.light-theme .review-feedback,
+body.light-theme .review-content h3 {
+    color: #32194b;
+}
+
+body.light-theme .events-heading p,
+body.light-theme .event-extra,
+body.light-theme .reviews-intro,
+body.light-theme .review-member {
+    color: #5d4770;
+}
+
+body.light-theme .btn-outline {
+    color: #6d258e;
+    background-color: #efe0fa;
+    border-color: #a968c7;
+}
+
+body.light-theme .btn-outline:hover {
+    color: white;
+    background-color: #7928a1;
+}
+
+body.light-theme .section-divider {
+    border-top-color: #d3c3e4;
+}
+
+body.light-theme .event-date {
+    background-color: #6d258e;
+    color: white;
+}
+
+body.light-theme .review-stars {
+    color: #8e237c;
+}
+
+#theme-button {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}

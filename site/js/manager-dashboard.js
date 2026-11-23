@@ -8,7 +8,8 @@ var categoryNames = {
 
 function showOfferings() {
   var offerings = JSON.parse(localStorage.getItem("offerings"));
-  if (offerings == null) {
+  if (offerings == null || offerings.length == 0) {
+    offeringsBody.innerHTML = "<tr><td colspan=\"3\">لا توجد أنشطة مضافة حتى الآن.</td></tr>";
     return;
   }
 
@@ -21,7 +22,7 @@ function showOfferings() {
     rows += "</tr>";
   }
 
-  offeringsBody.innerHTML += rows;
+  offeringsBody.innerHTML = rows;
 }
 
 showOfferings();

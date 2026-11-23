@@ -10,7 +10,7 @@ form.addEventListener("submit", function(event) {
     alert("يرجى اختيار النشاط.");
     return;
 }
-const namePattern = /^[A-Za-z\u0600-\u06FF]+(?:\s+[A-Za-z\u0600-\u06FF]+)+$/;
+const namePattern = /^[A-Za-zء-ي]+(?:\s+[A-Za-zء-ي]+)+$/;
 
 if (!namePattern.test(fullname.value.trim())) {
     alert("يرجى إدخال الاسم الكامل بدون أرقام أو رموز.");

@@ -1772,3 +1772,212 @@ body.light-theme .puzzle-box input {
     background-color: #f8f2ff;
     color: #32194b;
 }
+
+
+/* Light Theme for All Pages */
+
+body.light-theme {
+    color: #32194b;
+    background-color: #f8f2ff;
+    background-image: none;
+}
+
+/* Headings and Text */
+
+body.light-theme .page-title,
+body.light-theme .about-intro h2,
+body.light-theme .about-team h2,
+body.light-theme .about-join h2,
+body.light-theme .about-instructor-card a,
+body.light-theme .profile-table a,
+body.light-theme .section-title,
+body.light-theme .panel-title,
+body.light-theme .join-title,
+body.light-theme .club-sort-bar h2,
+body.light-theme .club-offering-content h2,
+body.light-theme .club-offering-price strong,
+body.light-theme .offerings-table strong,
+body.light-theme .review-offering {
+    color: #762d98;
+}
+
+body.light-theme .breadcrumb a {
+    color: #8d38ac;
+}
+
+body.light-theme .about-intro p,
+body.light-theme .about-join > p,
+body.light-theme .about-note,
+body.light-theme .about-instructor-card p,
+body.light-theme .club-offerings-intro,
+body.light-theme .club-offering-description,
+body.light-theme .club-offering-price,
+body.light-theme .panel-hint,
+body.light-theme .join-intro,
+body.light-theme .date-hint,
+body.light-theme .rating-hint,
+body.light-theme .stat-card p,
+body.light-theme .evaluation-thanks p,
+body.light-theme .club-sort-field label,
+body.light-theme .join-request label,
+body.light-theme .evaluation-form label {
+    color: #58436d;
+}
+
+/* Cards and Forms */
+
+body.light-theme .form-card,
+body.light-theme .panel,
+body.light-theme .stat-card,
+body.light-theme .join-request,
+body.light-theme .evaluation-form,
+body.light-theme .evaluation-thanks,
+body.light-theme .about-instructor-card,
+body.light-theme .club-sort-bar,
+body.light-theme .club-offering-card,
+body.light-theme .leader-card,
+body.light-theme .event-card,
+body.light-theme .review-card {
+    background-color: #ffffff;
+    border-color: #d5bee7;
+}
+
+body.light-theme .stat-card h3,
+body.light-theme .form-group label,
+body.light-theme .about-instructor-card h3,
+body.light-theme .evaluation-thanks h2,
+body.light-theme .review-content h3,
+body.light-theme .event-content h3 {
+    color: #32194b;
+}
+
+/* Input Fields */
+
+body.light-theme .form-group input,
+body.light-theme .form-group select,
+body.light-theme .form-group textarea,
+body.light-theme .form-group .select-box,
+body.light-theme .join-request input,
+body.light-theme .join-request select,
+body.light-theme .evaluation-form select,
+body.light-theme .evaluation-form textarea,
+body.light-theme .club-sort-field select,
+body.light-theme .puzzle-box input {
+    color: #32194b;
+    background-color: #f8f2ff;
+    border-color: #bea1d4;
+}
+
+body.light-theme .form-group .select-box select,
+body.light-theme .form-group .select-box select:focus {
+    background-color: #f8f2ff;
+}
+
+body.light-theme .form-group option,
+body.light-theme .join-request option,
+body.light-theme .evaluation-form option,
+body.light-theme .club-sort-field option,
+body.light-theme .club-sort-field optgroup {
+    color: #32194b;
+    background-color: #f8f2ff;
+}
+
+body.light-theme .form-group input:focus,
+body.light-theme .form-group select:focus,
+body.light-theme .form-group textarea:focus,
+body.light-theme .join-request input:focus,
+body.light-theme .evaluation-form textarea:focus {
+    background-color: #ffffff;
+    border-color: #8c43b2;
+}
+
+body.light-theme .evaluation-form textarea::placeholder {
+    color: #68537c;
+}
+
+body.light-theme .upload-btn,
+body.light-theme .btn-secondary {
+    background-color: #e8d6f5;
+    border-color: #ac7ac7;
+    color: #6d258e;
+}
+
+body.light-theme .upload-btn:hover,
+body.light-theme .btn-secondary:hover {
+    background-color: #762d98;
+    color: #ffffff;
+}
+
+/* Tables and Lists */
+
+body.light-theme .table-wrap,
+body.light-theme .profile-table {
+    background-color: #ffffff;
+    border-color: #d5bee7;
+}
+
+body.light-theme .offerings-table {
+    background-color: #d5bee7;
+}
+
+body.light-theme .offerings-table th,
+body.light-theme .profile-table th[scope="row"] {
+    background-color: #eee1f8;
+    color: #32194b;
+}
+
+body.light-theme .offerings-table td,
+body.light-theme .profile-table td {
+    background-color: #ffffff;
+    color: #32194b;
+    border-color: #d5bee7;
+}
+
+body.light-theme .offerings-table tbody tr:hover td {
+    background-color: #f4ebfa;
+}
+
+body.light-theme .profile-table .profile-name {
+    background-color: #e3cdf2;
+    color: #4e2569;
+}
+
+body.light-theme .instructor-list,
+body.light-theme .instructor-list li {
+    border-color: #d5bee7;
+}
+
+body.light-theme .instructor-list li:hover {
+    background-color: #f4ebfa;
+}
+
+body.light-theme .instructor-list label {
+    color: #32194b;
+}
+
+/* Participation Requests */
+
+body.light-theme #requests-list h3 {
+    color: #762d98;
+}
+
+body.light-theme #requests-list p {
+    background-color: #ffffff;
+    color: #32194b;
+    border-color: #d5bee7;
+}
+
+/* Header and Footer */
+
+body.light-theme .site-header,
+body.light-theme .site-footer {
+    color: #e8e3f3;
+}
+
+/* Theme Button Focus */
+
+.theme-toggle:focus {
+    outline: 2px solid #f062d8;
+    outline-offset: 3px;
+}
+

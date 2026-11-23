@@ -6,13 +6,17 @@ function applyTheme(theme) {
         document.body.className = "light-theme";
 
         if (button != null) {
-            button.innerHTML = "الوضع الداكن";
+            
+button.innerHTML = "🌙";
+
         }
     } else {
         document.body.className = "";
 
         if (button != null) {
-            button.innerHTML = "الوضع الفاتح";
+            
+button.innerHTML = "☀️";
+
         }
     }
 }

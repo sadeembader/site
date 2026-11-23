@@ -167,7 +167,28 @@
 
     <p>هل يمكنك حل الألغاز والوصول إلى الإجابة؟</p>
 
-    <a href="#" class="btn-outline">ابدأ الحل ←</a>
+   
+<button type="button" id="start-puzzle" class="btn-outline">
+    ابدأ الحل ←
+</button>
+
+<div id="puzzle-box" class="puzzle-box" style="display: none;">
+    <p class="puzzle-question">
+        ما الشيء الذي كلما أخذت منه كبر؟
+    </p>
+
+    <label for="puzzle-answer">إجابتك:</label>
+
+    <input type="text" id="puzzle-answer"
+           placeholder="اكتب إجابتك هنا">
+
+    <button type="button" id="check-puzzle" class="btn-outline">
+        تحقق من الإجابة
+    </button>
+
+    <p id="puzzle-result" aria-live="polite"></p>
+</div>
+
   </div>
 
   <div class="puzzle-image">

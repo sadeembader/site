@@ -1593,3 +1593,12 @@ img {
     color: #d9d2ea;
 }
 }
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+    cursor: pointer;
+}

@@ -1713,3 +1713,62 @@ body.light-theme .theme-toggle {
     color: #6c3295;
     border-color: #aa73c6;
 }
+
+/*  Interactive Weekly Puzzle */
+
+.puzzle-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1a1230;
+    border: 2px solid #362654;
+    border-radius: 16px;
+}
+
+.puzzle-question {
+    font-weight: 600;
+    color: #f3eefa;
+}
+
+.puzzle-box label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.puzzle-box input {
+    width: 100%;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #f3eefa;
+    background-color: #130c24;
+    border: 2px solid #6a3f8f;
+    border-radius: 12px;
+}
+
+.puzzle-box .btn-outline,
+#start-puzzle {
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#puzzle-result {
+    font-weight: 600;
+    min-height: 25px;
+}
+
+/* Light Theme */
+body.light-theme .puzzle-box {
+    background-color: #ffffff;
+    border-color: #d4bde8;
+    color: #32194b;
+}
+
+body.light-theme .puzzle-question {
+    color: #32194b;
+}
+
+body.light-theme .puzzle-box input {
+    background-color: #f8f2ff;
+    color: #32194b;
+}

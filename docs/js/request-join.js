@@ -16,7 +16,7 @@ if (!namePattern.test(fullname.value.trim())) {
     alert("يرجى إدخال الاسم الكامل بدون أرقام أو رموز.");
     return;
 }
-const selectedDate = new Date(date.value);
+const selectedDate = new Date(date.value + "T00:00");
 const today = new Date();
 
 today.setHours(0, 0, 0, 0);

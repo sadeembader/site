@@ -1981,3 +1981,14 @@ body.light-theme .site-footer {
     outline-offset: 3px;
 }
 
+
+/* Rating Stars - Light Theme */
+
+body.light-theme .rating-options span {
+    color: #a97ac1;
+}
+
+body.light-theme .rating-options label:has(input:checked) span,
+body.light-theme .rating-options label:has(input:checked) ~ label span {
+    color: gold;
+}

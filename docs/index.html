@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الرئيسية  | نادي أريب</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo-light.png" alt="شعار نادي أريب" class="logo">
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active" >الرئيسية</a></li>
+          <li><a href="offerings.html">أنشطة النادي</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="manager-dashboard.html" >لوحة المدير</a></li>
+          <li><a href="member-dashboard.html">لوحة العضو</a></li>
+       
+<li class="theme-item">
+  <button id="theme-button" class="theme-toggle"
+          type="button" aria-label="تبديل المظهر"
+          title="تبديل المظهر">
+
+    <svg class="theme-sun" viewBox="0 0 24 24"
+         fill="none" stroke="currentColor"
+         stroke-width="1.8" stroke-linecap="round">
+      <circle cx="12" cy="12" r="4"></circle>
+      <path d="M12 2v2 M12 20v2 M4.93 4.93l1.42 1.42
+               M17.65 17.65l1.42 1.42 M2 12h2 M20 12h2
+               M4.93 19.07l1.42-1.42
+               M17.65 6.35l1.42-1.42"></path>
+    </svg>
+
+    <svg class="theme-moon" viewBox="0 0 24 24"
+         fill="none" stroke="currentColor"
+         stroke-width="1.8" stroke-linecap="round">
+      <path d="M20.5 14A9 9 0 0 1 10 3.5
+               9 9 0 1 0 20.5 14Z"></path>
+    </svg>
+
+  </button>
+</li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ 
+
+  <main class="page-content">
+    <section class="home-intro">  <!--section 1--> 
+      <div class="intro-text">
+    <h1> نادي أريب</h1>
+     <p>مساحتك لتحدي العقل، حل الألغاز وإثبات جدارتك.</p>
+
+
+<a href="member-dashboard.html" class="btn-outline">انضم إلينا</a>
+      <a href="offerings.html" class="btn-outline">اكتشف أنشطتنا</a>
+        
+
+
+
+</div>
+
+ <div class="intro-image">
+      <img src="images/home-banner.png"
+           alt="صورة لتعريف النادي ">
+           </div>
+</section>  <!--section 1--> 
+
+
+<hr class="section-divider">
+
+
+<section class="home-leaderboard">  <!--section 2--> 
+<div class="leaderboard-top">
+  <div class="leaderboard-heading">
+    <img src="images/leaderboard-trophy.png"
+         alt="كأس الفوز"
+         class="leaderboard-icon">
+
+    <h2>لوحة الصدارة</h2>
+  </div>
+
+  <a href="#" class="btn-outline">عرض الكل ←</a>
+</div>
+
+
+<div class="leaderboard-first">
+    <div class="leader-card">
+
+       <div class="leader-trophy">
+        <span class="trophy-icon">🏆</span>
+        <span class="trophy-number">1</span>
+      </div>
+
+      <div class="leader-info">
+  <h3>سارة</h3>
+  <p>930 نقطة</p>
+</div>
+
+      <img src="images/member-avatar.png"
+     alt="صورة رمزية للعضو"
+     class="leader-avatar">
+         </div>
+
+    </div>
+
+      <div class="leaderboard-row">
+    <div class="leader-card">
+
+      <div class="leader-trophy">
+        <span class="trophy-icon">🏆</span>
+        <span class="trophy-number">2</span>
+      </div>
+
+      <div class="leader-info">
+      <h3>نورة</h3>
+      <p>870 نقطة</p>
+      </div>
+
+      <img src="images/member-avatar.png"
+     alt="صورة رمزية للعضو"
+     class="leader-avatar">
+    </div>
+
+    <div class="leader-card">
+
+      <div class="leader-trophy">
+        <span class="trophy-icon">🏆</span>
+        <span class="trophy-number">3</span>
+      </div>
+
+      <div class="leader-info">
+      <h3>محمد</h3>
+      <p>730 نقطة</p>
+      </div>
+
+      <img src="images/member-avatar.png"
+     alt="صورة رمزية للعضو"
+     class="leader-avatar">
+
+    </div>
+</div>
+</section>   <!--section 2--> 
+
+<hr class="section-divider">
+
+
+<section class="home-puzzle page-content">
+
+  <div class="puzzle-text">
+    <div class="puzzle-heading">
+      <img src="images/puzzle-piece.png"
+           alt="قطعة أحجية"
+           class="puzzle-icon">
+
+      <h2>لغز الأسبوع</h2>
+    </div>
+
+    <p>هل يمكنك حل الألغاز والوصول إلى الإجابة؟</p>
+
+   
+<button type="button" id="start-puzzle" class="btn-outline">
+    ابدأ الحل ←
+</button>
+
+<div id="puzzle-box" class="puzzle-box" style="display: none;">
+    <p class="puzzle-question">
+        ما الشيء الذي كلما أخذت منه كبر؟
+    </p>
+
+    <label for="puzzle-answer">إجابتك:</label>
+
+    <input type="text" id="puzzle-answer"
+           placeholder="اكتب إجابتك هنا">
+
+    <button type="button" id="check-puzzle" class="btn-outline">
+        تحقق من الإجابة
+    </button>
+
+    <p id="puzzle-result" aria-live="polite"></p>
+</div>
+
+  </div>
+
+  <div class="puzzle-image">
+    <img src="images/weekly-puzzle.png"
+         alt="مكعب أحجية ومسار ضوئي ينتهي بقفل مفتوح">
+  </div>
+
+</section><!--section 3-->
+
+
+<hr class="section-divider">
+
+
+
+<section class="home-events page-content"><!-- section 4 -->
+
+  <div class="events-heading">
+    <div>
+      <h2>الأنشطة القادمة</h2>
+      <p>تجارب وأنشطة متنوعة تناسب جميع المهتمين بالألغاز والتفكير المنطقي</p>
+    </div>
+
+    <a href="offerings.html" class="btn-outline">عرض جميع الأنشطة ←</a>
+  </div>
+
+  <div class="events-list">
+
+    <article class="event-card">
+
+      <div class="event-image">
+        <img src="images/cipher-championship.png"
+             alt="كأس بطولة الشفرة السنوية">
+
+        <span class="event-date">12 ديسمبر</span>
+      </div>
+
+      <div class="event-content">
+        <h3>بطولة الشفرة السنوية</h3>
+
+       <p class="event-description">
+          تنافس مع أفضل الفرق في تحديات وألغاز ممتعة على مدار العام
+        </p>
+
+        <div class="event-extra">
+  <p>المكان: بهو جامعة الملك سعود</p>
+  <p>الوقت: من 2 إلى 4 مساءً</p>
+</div>
+
+        <a href="offerings.html" class="btn-outline">المزيد ←</a>
+      </div>
+
+    </article>
+
+    <article class="event-card">
+
+      <div class="event-image">
+        <img src="images/puzzles-introduction.png"
+             alt="قطع أحجية ومفتاح وقرص للشفرات">
+
+        <span class="event-date">5 يناير</span>
+      </div>
+
+      <div class="event-content">
+        <h3>مقدمة في الألغاز والشفرات</h3>
+
+        <p class="event-description">
+          ورشة عمل لتعلم أساسيات التشفير وحل الألغاز
+        </p>
+        <div class="event-extra">
+  <p>المكان: بهو جامعة الملك سعود</p>
+  <p>الوقت: من 12 ظهرًا إلى 2 مساءً</p>
+</div>
+
+        <a href="offerings.html" class="btn-outline">المزيد ←</a>
+      </div>
+
+    </article>
+
+    <article class="event-card">
+
+      <div class="event-image">
+        <img src="images/team-investigation.png"
+             alt="عدسة مكبرة وملفات تحقيق وأدلة مترابطة">
+
+        <span class="event-date">19 يناير</span>
+      </div>
+
+      <div class="event-content">
+        <h3>تحدي التحقيق الجماعي</h3>
+
+        <p class="event-description">
+          تجربة تفاعلية تحاكي التحقيقات الحقيقية وتختبر مهاراتك بالتحليل
+        </p>
+        <div class="event-extra">
+  <p>المكان: بهو جامعة الملك سعود</p>
+  <p>الوقت: من 1 إلى 3 مساءً</p>
+</div>
+
+        <a href="offerings.html" class="btn-outline">المزيد ←</a>
+      </div>
+
+    </article>
+
+  </div>
+
+</section><!--section 4 -->
+
+
+
+<hr class="section-divider">
+
+<section class="home-reviews page-content"><!--section 5 -->
+
+  <h2>آراء أعضائنا</h2>
+  <p class="reviews-intro">تجارب حقيقية من أعضاء النادي</p>
+
+  <div class="reviews-list">
+
+    <div class="review-card">
+      <div class="review-content">
+        <p class="review-stars" >★★★★★</p>
+        <p class="review-of0fering">بطولة الشفرة السنوية</p>
+
+        <p class="review-feedback">
+          "النادي غير طريقة تفكيري فعلاً! تجارب ممتعة وأشخاص رائعين."
+        </p>
+
+        <h3>سارة</h3>
+        <p class="review-member">عضو في النادي</p>
+      </div>
+
+      <img src="images/member-avatar.png"
+           alt="صورة رمزية لسارة"
+           class="review-avatar">
+    </div>
+
+    <div class="review-card">
+      <div class="review-content">
+        <p class="review-stars" >★★★★★</p>
+        <p class="review-of0fering">مقدمة في الألغاز والشفرات</p>
+
+        <p class="review-feedback">
+          "ورش العمل كانت مفيدة وسهلة الفهم، أنصح الجميع بالانضمام."
+        </p>
+
+        <h3>عبدالله</h3>
+        <p class="review-member">عضو في النادي</p>
+      </div>
+
+      <img src="images/member-avatar.png"
+           alt="صورة رمزية لعبدالله"
+           class="review-avatar">
+    </div>
+
+    <div class="review-card">
+      <div class="review-content">
+        <p class="review-stars" >★★★★★</p>
+        <p class="review-of0fering">تحدي التحقيق الجماعي</p>
+
+        <p class="review-feedback">
+          "بيئة محفزة ومليئة بالتحديات الممتعة. أفضل نادي في الجامعة!"
+        </p>
+
+        <h3>جود</h3>
+        <p class="review-member">عضو في النادي</p>
+      </div>
+
+      <img src="images/member-avatar.png"
+           alt="صورة رمزية لجود"
+           class="review-avatar">
+    </div>
+
+  </div>
+
+</section><!--section 5 -->
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo-light.png" alt="شعار نادي أريب" class="footer-logo">
+        <p>وجهتك الجامعية لتطوير مهارات التفكير المنطقي عبر تحديات متجددة.</p>
+      </div>
+      <div class="footer-contact">
+        <h2>تواصل معنا</h2>
+        <ul>
+          <li class="contact-email"><a href="mailto:join@cipherclub.university.edu.sa">join@cipherclub.university.edu.sa</a></li>
+          <li class="contact-location">مبنى الأنشطة الطلابية، قاعة 214</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p id="clock"></p>
+        <ul class="footer-links">
+          <li><a href="#">سياسة الخصوصية</a></li>
+          <li class="last"><a href="#">الشروط والأحكام</a></li>
+        </ul>
+        <p>&copy; 2026 نادي أريب. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+  <button id="backToTop" onclick="backToTop()">↑</button>
+<script src="js/home.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/weekly-puzzle.js"></script>
+</body>
+</html>

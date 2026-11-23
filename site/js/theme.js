@@ -1,25 +1,13 @@
 
-function applyTheme(theme) {
-    var button = document.getElementById("theme-button");
 
+function applyTheme(theme) {
     if (theme == "light") {
         document.body.className = "light-theme";
-
-        if (button != null) {
-            
-button.innerHTML = "🌙";
-
-        }
     } else {
         document.body.className = "";
-
-        if (button != null) {
-            
-button.innerHTML = "☀️";
-
-        }
     }
 }
+
 
 function switchTheme() {
     if (document.body.className == "light-theme") {
